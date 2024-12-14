@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 
 type TabType = "work" | "education";
@@ -22,11 +23,10 @@ const HomePage: React.FC = () => {
         <h3 className="text-2xl font-semibold text-gray-800 mb-4">Tech Stack</h3>
         <div className="flex flex-wrap gap-3">
           {technologies.map((tech, index) => (
-            <span 
-              key={tech} 
+            <span
+              key={tech}
               className="px-4 py-2 rounded-full text-gray-700 text-sm bg-paper hover:scale-110 transition-transform duration-200 animate-fade-in-up"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
+              style={{ animationDelay: `${index * 100}ms` }}>
               {tech}
             </span>
           ))}
@@ -84,14 +84,28 @@ const HomePage: React.FC = () => {
         <div className="mt-4">
           <div className="px-2 py-4">
             <h4 className="font-semibold text-gray-800">
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" className="inline-flex items-center gap-1 hover:text-blue-600 transition-colors duration-200">
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+                className="inline-flex items-center gap-1 hover:text-blue-600 transition-colors duration-200">
                 Best thing you will ever see in your life.
                 <ArrowTopRightOnSquareIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
               </a>
             </h4>
-            <p className="mt-2 text-gray-700">You have to see it before we go further. Once you're back <span onClick={() => setRickRoll(true)} className="cursor-pointer text-blue-600 hover:text-blue-800 transition-colors duration-200">click here</span>.</p>
+            <p className="mt-2 text-gray-700">
+              You have to see it before we go further. Once you're back{" "}
+              <span
+                onClick={() => setRickRoll(true)}
+                className="cursor-pointer text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                click here
+              </span>
+              .
+            </p>
             {rickRoll && (
-              <p className="mt-2 text-gray-700 animate-fade-in">On more serious note - I have full time job, two kids, passion and a bunch of chronic deseases, if you still expect me to work overtime it's time to leave this place in peace ;)</p>
+              <p className="mt-2 text-gray-700 animate-fade-in">
+                On more serious note - I have full time job, two kids, passion and a bunch of chronic deseases, if you
+                still expect me to work overtime it's time to leave this place in peace ;)
+              </p>
             )}
           </div>
         </div>
@@ -99,7 +113,10 @@ const HomePage: React.FC = () => {
         <div className="mt-4">
           <div className="px-2 py-4">
             <h4 className="font-semibold text-gray-800">
-              <a href="http://cichociemni.edu.pl/" target="_blank" className="inline-flex items-center gap-1 hover:text-blue-600 transition-colors duration-200">
+              <a
+                href="http://cichociemni.edu.pl/"
+                target="_blank"
+                className="inline-flex items-center gap-1 hover:text-blue-600 transition-colors duration-200">
                 'Silent and Unseen' paratroops
                 <ArrowTopRightOnSquareIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
               </a>
@@ -111,7 +128,10 @@ const HomePage: React.FC = () => {
         <div className="mt-4">
           <div className="px-2 py-4">
             <h4 className="font-semibold text-gray-800">
-              <a href="http://geodezjaguzik.pl/" target="_blank" className="inline-flex items-center gap-1 hover:text-blue-600 transition-colors duration-200">
+              <a
+                href="http://geodezjaguzik.pl/"
+                target="_blank"
+                className="inline-flex items-center gap-1 hover:text-blue-600 transition-colors duration-200">
                 Geodezja Guzik
                 <ArrowTopRightOnSquareIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
               </a>
