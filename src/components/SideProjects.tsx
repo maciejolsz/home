@@ -53,7 +53,7 @@ const SideProjects: React.FC = () => {
               still expect me to work overtime it's time to leave this place in peace ;)
               <br />
               <br />
-              To be fair - I did something for friends and family, but it's not a big deal, it was looonng time ago.
+              To be fair - I did something for friends and family, but it's not a big deal, and it was looonng time ago.
               <br />
               You can check it out below.
             </p>
