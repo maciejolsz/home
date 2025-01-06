@@ -109,7 +109,7 @@ const HomePage: React.FC = () => {
 
         <div className="mt-4">
           <div className="px-4 py-4">
-            <h4 className="font-semibold text-brown-900">Personal Project</h4>
+            <h4 className="text-brown-900">Personal Project</h4>
             <p className="mt-2 text-gray-700">Project description...</p>
           </div>
         </div>
