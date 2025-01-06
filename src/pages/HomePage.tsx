@@ -2,7 +2,7 @@ import React from "react";
 import SideProjects, { Project } from "../components/SideProjects";
 import Experience, { WorkHistoryItem, EducationHistoryItem } from "../components/Experience";
 
-const technologies = ["HTML", "CSS/Tailwind", "JavaScript/TypeScript", "Angular", "React"];
+const technologies = ["JavaScript/TypeScript", "Angular", "React", "CSS/Tailwind", "HTML"];
 
 const projects: Project[] = [
   {

@@ -18,8 +18,10 @@ module.exports = {
           800: '#846358',
           900: '#43302b',
         },
-        paper: '#f5f5f5',
-        paperDark: '#e0e0e0',
+        // paper: '#f5f5f5',
+        // paperDark: '#e0e0e0',
+        paper: '#f6eee3',
+        paperDark: '#e5decf',
       },
       keyframes: {
         'fade-in': {

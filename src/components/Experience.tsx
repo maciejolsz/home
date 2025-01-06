@@ -37,14 +37,14 @@ const Experience: React.FC<{ workHistory: WorkHistoryItem[], educationHistory: E
         <button
           onClick={() => setActiveTab("work")}
           className={`pb-2 px-1 border-b-2 hover:text-gray-800 ${
-            activeTab === "work" ? "border-gray-800 text-gray-800" : "border-gray-300 text-gray-400"
+            activeTab === "work" ? "border-gray-800 text-gray-800" : "border-gray-400 text-gray-500"
           }`}>
           Professional Journey
         </button>
         <button
           onClick={() => setActiveTab("education")}
           className={`pb-2 px-1 border-b-2 hover:text-gray-800 ${
-            activeTab === "education" ? "border-gray-800 text-gray-800" : "border-gray-300 text-gray-400"
+            activeTab === "education" ? "border-gray-800 text-gray-800" : "border-gray-400 text-gray-500"
           }`}>
           Academic Background
         </button>
