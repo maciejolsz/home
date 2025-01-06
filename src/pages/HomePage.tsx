@@ -76,7 +76,7 @@ const educationHistory: EducationHistoryItem[] = [
 
 const HomePage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-paper to-paperDark px-4 py-12 md:px-8">
+    <div className="min-h-screen bg-gradient-to-bl from-paper to-paperDark px-4 py-12 md:px-8">
       {/* Header Section */}
       <header className="max-w-3xl mx-auto animate-fade-in text-brown-900">
         <h1 className="text-4xl font-bold">Maciek Olszewski</h1>
