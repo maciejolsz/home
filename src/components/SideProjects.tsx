@@ -40,7 +40,7 @@ const SideProjects: React.FC<{ projects: Project[] }> = ({ projects }) => {
               still expect me to work overtime it's time to leave this place in peace ;)
               <br />
               <br />
-              To be fair - I did something for friends and family, but it's not a big deal, and it was looonng time ago.
+              To be fair - I did something for friends and family, I do learn stuff after work, but I wouldn't say it's a big deal.
               <br />
               You can check it out below.
             </p>
