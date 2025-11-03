@@ -2,14 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Set default rem size - change this to adjust all rem values */
+html {
+  font-size: 18px; /* Default: 1rem = 16px. Change to 18px for 1rem = 18px, etc. */
+}
+
 body {
   letter-spacing: 0.05em;
   cursor: default;
   font-family: 'Roboto Condensed', sans-serif;
   /* opacity: 0.75; */
 }
-
-
 
 h1, h3 {
   font-family: 'Bodoni Moda', serif;

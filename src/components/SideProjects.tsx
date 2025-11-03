@@ -21,7 +21,7 @@ const SideProjects: React.FC<{ projects: Project[] }> = ({ projects }) => {
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
               target="_blank"
               className="inline-flex items-center gap-1 transition-colors duration-200">
-              Probably the best thing you will see in your life.
+              Probably the best thing you will see in your life!
               <ArrowTopRightOnSquareIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </a>
           </h4>
@@ -40,7 +40,8 @@ const SideProjects: React.FC<{ projects: Project[] }> = ({ projects }) => {
               still expect me to work overtime it's time to leave this place in peace ;)
               <br />
               <br />
-              To be fair - I did something for friends and family, I do learn stuff after work, but I wouldn't say it's a big deal.
+              To be fair - I did something for friends and family, I do learn "stuff", but I wouldn't say it's a big deal.
+              It's ugly, it's dirty, it's not even close to perfect. But it's mine. My Precioussss.
               <br />
               You can check it out below.
             </p>

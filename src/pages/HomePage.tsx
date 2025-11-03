@@ -104,7 +104,7 @@ const HomePage: React.FC = () => {
 
       {/* Personal Work Section */}
       {/* todo: copy from side projects */}
-      <section className="max-w-3xl mx-auto mt-12 animate-fade-in">
+      {/* <section className="max-w-3xl mx-auto mt-12 animate-fade-in">
         <h3 className="text-2xl text-brown-900 font-semibold mb-4">Personal Work</h3>
 
         <div className="mt-4">
@@ -113,7 +113,7 @@ const HomePage: React.FC = () => {
             <p className="mt-2 text-gray-700">Project description...</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
