@@ -19,7 +19,7 @@ const technologiesSecondary = ["Ruby (on Rails)", "PHP", "Next.js", "Electron", 
 
 const HomePage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-bl from-paper to-paperDark px-4 py-12 md:px-8">
+    <div className="min-h-screen bg-gradient-to-tl from-paper to-paperDark px-4 py-12 md:px-8">
       {/* Header Section */}
       <header className="max-w-3xl mx-auto animate-fade-in text-brown-900">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">

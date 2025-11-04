@@ -18,10 +18,22 @@ module.exports = {
           800: '#846358',
           900: '#43302b',
         },
+
+        // warm colors
+        paper: '#f2f2f2',
+        paperDark: '#5746031f',
+
+        // green colors
+        // paper: '#f5f5f5',
+        // paperDark: '#b6beb38c',
+
+        // gray colors
         // paper: '#f5f5f5',
         // paperDark: '#e0e0e0',
-        paper: '#f6eee3',
-        paperDark: '#e5decf',
+
+        // old paper colors
+        // paper: '#f6eee3',
+        // paperDark: '#e5decf',
       },
       keyframes: {
         'fade-in': {
