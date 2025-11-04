@@ -1,6 +1,7 @@
 import React from "react";
 import SideProjects, { Project } from "../components/SideProjects";
 import Experience, { WorkHistoryItem, EducationHistoryItem } from "../components/Experience";
+import Recommendations, { RecommendationItem } from "../components/Recommendations";
 
 const technologies = ["JavaScript/TypeScript", "Angular", "React", "CSS/Tailwind", "HTML"];
 
@@ -74,6 +75,15 @@ const educationHistory: EducationHistoryItem[] = [
   }
 ];
 
+const recommendations: RecommendationItem[] = [
+  {
+    name: "John Doe",
+    position: "CTO",
+    company: "Example Company",
+    text: "Maciek is an exceptional developer with great attention to detail and strong problem-solving skills."
+  }
+];
+
 const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-bl from-paper to-paperDark px-4 py-12 md:px-8">
@@ -99,6 +109,8 @@ const HomePage: React.FC = () => {
       </section>
 
       <Experience workHistory={workHistory} educationHistory={educationHistory} />
+
+      <Recommendations recommendations={recommendations} />
 
       <SideProjects projects={projects} />
 

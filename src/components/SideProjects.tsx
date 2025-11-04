@@ -25,25 +25,24 @@ const SideProjects: React.FC<{ projects: Project[] }> = ({ projects }) => {
               <ArrowTopRightOnSquareIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </a>
           </h4>
-          <p className="mt-2 text-gray-700">
+          <p className="mt-4 text-gray-700">
             You have to see it before we go further. Once you're back{" "}
-            <span
-              onClick={() => setRickRoll(true)}
+            <a
+              href="javascript:void(0)"
+              onClick={(e) => {
+                e.preventDefault();
+                setRickRoll(true)
+              }}
               className="text-brown-900 cursor-pointer transition-colors duration-200">
               click here
-            </span>
+            </a>
             .
           </p>
           {rickRoll && (
-            <p className="mt-2 text-gray-700 animate-fade-in">
-              Let's be serious - I have "full time job", two kids, passion and a bunch of chronic deseases, if you
-              still expect me to work overtime it's time to leave this place in peace ;)
-              <br />
-              <br />
+            <p className="mt-4 text-gray-700 animate-fade-in">
+              I don't do side projects :)<br />
               To be fair - I did something for friends and family, I do learn "stuff", but I wouldn't say it's a big deal.
-              It's ugly, it's dirty, it's not even close to perfect. But it's mine. My Precioussss.
-              <br />
-              You can check it out below.
+              It's ugly, it's dirty, sometimes it's not even working. But no worries - falling behind is not an option :).
             </p>
           )}
         </div>
