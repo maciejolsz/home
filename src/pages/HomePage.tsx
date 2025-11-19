@@ -11,11 +11,10 @@ import {
   recommendations,
   name,
   subtitle,
-  personalWorkItems
+  personalWorkItems,
+  technologiesPrimary,
+  technologiesSecondary
 } from "../consts/homePageData";
-
-const technologiesPrimary = ["JavaScript/TypeScript", "Angular", "React", "CSS, SCSS, Tailwind", "HTML"];
-const technologiesSecondary = ["Ruby (on Rails)", "PHP", "Next.js", "Electron", "Capacitor", "Git", "CI/CD", "Docker", "MySQL"];
 
 const HomePage: React.FC = () => {
   return (
