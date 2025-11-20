@@ -7,6 +7,7 @@ import Experience from "../components/Experience";
 import Recommendations from "../components/Recommendations";
 import SocialLinks from "../components/SocialLinks";
 import PersonalWork from "../components/PersonalWork";
+import ProudSection from "../components/ProudSection";
 import {
   projects,
   workHistory,
@@ -16,7 +17,8 @@ import {
   subtitle,
   personalWorkItems,
   technologiesPrimary,
-  technologiesSecondary
+  technologiesSecondary,
+  proudHighlights
 } from "../consts/homePageData";
 
 const getTechIcon = (tech: string) => {
@@ -89,6 +91,10 @@ const HomePage: React.FC = () => {
 
       {(workHistory.length > 0 || educationHistory.length > 0) && (
         <Experience workHistory={workHistory} educationHistory={educationHistory} />
+      )}
+
+      {proudHighlights.length > 0 && (
+        <ProudSection items={proudHighlights} />
       )}
 
       {recommendations.length > 0 && (
