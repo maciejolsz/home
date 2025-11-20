@@ -3,70 +3,57 @@ import { WorkHistoryItem, EducationHistoryItem } from "../components/Experience"
 import { RecommendationItem } from "../components/Recommendations";
 import { PersonalWorkItem } from "../components/PersonalWork";
 
-export const name: string = "Maciek Olszewski";
-export const subtitle: string = "Software Dev Based In Poland";
-
-export const email: string = "maciejolsz@gmail.com";
-export const linkedin: string = "https://www.linkedin.com/in/maciej-olszewski-a68b7068/";
-export const github: string = "https://github.com/maciejolsz";
-export const x: string = "https://x.com/maciejolszDev";
-export const resume: string = "/cv.pdf";
-
-export const technologiesPrimary = ["JavaScript/TypeScript", "Angular", "React", "CSS, SCSS, Tailwind", "HTML"];
-export const technologiesSecondary = ["Ruby (on Rails)", "PHP", "Next.js", "Electron", "Capacitor", "Git/GitHub", "CI/CD", "Docker", "MySQL", "And more..."];
+export const technologiesPrimary = ["TypeScript", "JavaScript", "Angular", "React", "CSS", "Tailwind", "HTML"];
+export const technologiesSecondary = ["RoR", "PHP", "Electron", "Capacitor", "Git", "GitHub", "CI/CD", "Docker", "MySQL"];
 
 export const projects: Project[] = [
   {
-    title: "Silent and Unseen paratroops",
-    url: "http://cichociemni.edu.pl/",
-    description: "Just another Wordpress page."
+    title: "Tech Innovation Hub",
+    url: "https://example.com/project1",
+    description: "A modern web application built with WordPress."
   },
   {
-    title: "Geodezja Guzik",
-    url: "https://geodezjaguzik.pl/",
-    description: "Just another landing page."
+    title: "Digital Solutions Portal",
+    url: "https://example.com/project2",
+    description: "A responsive landing page for digital services."
   }
 ];
 
 export const workHistory: WorkHistoryItem[] = [
   {
-    company: "Amsterdam Standard",
-    logo: "/company-logos/amsterdam_standard.jpeg",
-    position: "Full Stack Dev",
+    company: "TechCorp Solutions",
+    position: "Full Stack Developer",
     startDate: "sep 2015",
     endDate: "current",
-    duration: "10+ years",
-    description: "Multiple long-term projects implemented with help of Zend, Laravel, Ruby on Rails, Angular and React. Recently leaning towards front-end stack."
+    duration: "9+ years",
+    description: "Developed and maintained multiple long-term projects using various frameworks including Laravel, Ruby on Rails, Angular, and React. Currently focusing on modern front-end technologies."
   },
   {
-    company: "codeFX",
-    position: "Full Stack Dev",
+    company: "FreelanceDev",
+    position: "Full Stack Developer",
     employmentType: "Self-employed",
     startDate: "dec 2014",
     endDate: "current",
     duration: "10 years 1 month",
   },
   {
-    company: "Inteon Mobile Sp. z o.o.",
-    logo: "/company-logos/inteon.jpeg",
-    position: "Backend Dev",
+    company: "MobileTech Inc.",
+    position: "Backend Developer",
     startDate: "jan 2015",
     endDate: "jul 2015",
     duration: "7 months",
-    description: "Implementing CRM for DTP industry using custom framework based on PHP."
+    description: "Developed CRM system for digital services industry using custom PHP framework."
   },
   {
-    company: "EDGE Technology PL",
-    logo: "/company-logos/edge.jpeg",
-    position: "Backend Dev",
+    company: "WebSolutions Ltd.",
+    position: "Backend Developer",
     startDate: "jun 2014",
     endDate: "jan 2015",
     duration: "8 months",
   },
   {
-    company: "Ideo Sp. z o.o.",
-    logo: "/company-logos/ideo.jpeg",
-    position: "Web Dev",
+    company: "Digital Agency",
+    position: "Web Developer",
     startDate: "apr 2013",
     endDate: "may 2014",
     duration: "1 year 2 months",
@@ -75,24 +62,47 @@ export const workHistory: WorkHistoryItem[] = [
 
 export const educationHistory: EducationHistoryItem[] = [
   {
-    school: "AGH University of Krakow",
+    school: "State University",
     degree: "Master of Engineering",
     startDate: "2007",
     endDate: "2012",
-    logo: "/company-logos/agh.jpeg",
-    description: "Modelling and Computer Systems in Geophysics",
+    description: "Computer Science and Software Engineering",
     duration: "5 years",
   }
 ];
 
 export const recommendations: RecommendationItem[] = [
   {
-    name: "John Doe",
+    name: "John Smith",
     position: "CTO",
-    company: "Example Company",
-    text: "Maciek is an exceptional developer with great attention to detail and strong problem-solving skills."
+    company: "Tech Solutions Inc.",
+    text: "An exceptional developer with great attention to detail and strong problem-solving skills."
   }
 ];
 
-export const personalWorkItems: PersonalWorkItem[] = [];
+export const name: string = "John Doe";
+export const subtitle: string = "Software Developer";
 
+export const email: string = "example@email.com";
+export const linkedin: string = "https://linkedin.com/in/example";
+export const github: string = "https://github.com/example";
+export const x: string = "https://x.com/example";
+export const resume: string = "/resume.pdf";
+
+export const personalWorkItems: PersonalWorkItem[] = [
+  {
+    title: "Personal Project",
+    url: "https://example.com/personal-project",
+    description: "A comprehensive web application showcasing modern front-end development practices using React and TypeScript."
+  },
+  {
+    title: "Open Source Contribution",
+    url: "https://example.com/open-source",
+    description: "Contributing to open source projects focused on improving developer experience and accessibility."
+  },
+  {
+    title: "Learning Experiment",
+    url: "https://example.com/learning-experiment",
+    description: "Exploring new technologies and frameworks through hands-on experimentation and side projects."
+  }
+];
