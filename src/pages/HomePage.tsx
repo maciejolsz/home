@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
       <header className="max-w-3xl mx-auto animate-fade-in text-brown-900">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
           <div>
-            <h1 className="text-7xl font-bold">{name}</h1>
+            <h1 className="text-5xl font-bold sm:text-6xl md:text-7xl">{name}</h1>
             <h2 className="text-md mt-1">{subtitle}</h2>
           </div>
           <SocialLinks />
