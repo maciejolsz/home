@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Uncomment if you publish a sitemap.xml at the domain root:
-# Sitemap: https://maciejolsz.dev/sitemap.xml
+# Sitemap: https://based.dev/sitemap.xml
