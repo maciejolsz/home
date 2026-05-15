@@ -20,9 +20,7 @@ const ProudSection: React.FC<{ items: ProudItem[] }> = ({ items }) => {
 
         <div className="space-y-4">
           {items.map((item, index) => (
-            <article
-              key={index}
-              className="group rounded-lg px-4 py-4 transition-all duration-200 hover:bg-paper/70">
+            <article key={index} className="group rounded-lg px-4 py-4 transition-all duration-200 hover:bg-paper/70">
               <span className="text-[10px] uppercase tracking-[0.2em] text-brown-500">{item.badge}</span>
               <p className="text-xl text-brown-900 mt-2 leading-tight">{item.punchline}</p>
               <p className="text-gray-700 mt-2 text-sm">{item.description}</p>
@@ -35,4 +33,3 @@ const ProudSection: React.FC<{ items: ProudItem[] }> = ({ items }) => {
 };
 
 export default ProudSection;
-

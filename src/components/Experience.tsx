@@ -25,7 +25,10 @@ export interface EducationHistoryItem {
   description: string;
 }
 
-const Experience: React.FC<{ workHistory: WorkHistoryItem[], educationHistory: EducationHistoryItem[] }> = ({ workHistory, educationHistory }) => {
+const Experience: React.FC<{ workHistory: WorkHistoryItem[]; educationHistory: EducationHistoryItem[] }> = ({
+  workHistory,
+  educationHistory,
+}) => {
   const [activeTab, setActiveTab] = useState<TabType>("work");
   const [showAllWork, setShowAllWork] = useState(false);
 
@@ -40,14 +43,18 @@ const Experience: React.FC<{ workHistory: WorkHistoryItem[], educationHistory: E
         <button
           onClick={() => setActiveTab("work")}
           className={`pb-2 px-1 hover:text-brown-900 hover:opacity-100 ${
-            activeTab === "work" ? "border-b-2 border-brown-900 text-brown-900" : "border-brown-800 text-brown-800 opacity-50"
+            activeTab === "work"
+              ? "border-b-2 border-brown-900 text-brown-900"
+              : "border-brown-800 text-brown-800 opacity-50"
           }`}>
           Professional Journey
         </button>
         <button
           onClick={() => setActiveTab("education")}
           className={`pb-2 px-1 hover:text-brown-900 hover:opacity-100 ${
-            activeTab === "education" ? " border-b-2 border-brown-900 text-brown-900" : "border-brown-900 text-brown-900 opacity-50"
+            activeTab === "education"
+              ? " border-b-2 border-brown-900 text-brown-900"
+              : "border-brown-900 text-brown-900 opacity-50"
           }`}>
           Academic Background
         </button>
@@ -64,10 +71,10 @@ const Experience: React.FC<{ workHistory: WorkHistoryItem[], educationHistory: E
                     <div className="flex-shrink-0">
                       <div className="w-16 h-16 bg-paper rounded-lg shadow-sm flex items-center justify-center p-2">
                         {job.logo ? (
-                          <img 
-                            src={job.logo} 
-                            alt={job.company} 
-                            className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-200" 
+                          <img
+                            src={job.logo}
+                            alt={job.company}
+                            className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-200"
                           />
                         ) : (
                           <span className="text-gray-500">
@@ -85,12 +92,12 @@ const Experience: React.FC<{ workHistory: WorkHistoryItem[], educationHistory: E
                       <div className="flex items-center gap-4 text-sm text-gray-500 mt-1">
                         <div className="flex items-center gap-1">
                           <IconCalendar className="h-4 w-4" />
-                          <span>{job.startDate} - {job.endDate} · {job.duration}</span>
+                          <span>
+                            {job.startDate} - {job.endDate} · {job.duration}
+                          </span>
                         </div>
                       </div>
-                      {job.description && (
-                        <p className="mt-4 text-gray-700">{job.description}</p>
-                      )}
+                      {job.description && <p className="mt-4 text-gray-700">{job.description}</p>}
                     </div>
                   </div>
                 </div>
@@ -114,10 +121,10 @@ const Experience: React.FC<{ workHistory: WorkHistoryItem[], educationHistory: E
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 bg-paper rounded-lg shadow-sm flex items-center justify-center p-2">
                       {eduItem.logo ? (
-                        <img 
-                          src={eduItem.logo} 
-                          alt={eduItem.school} 
-                          className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-200" 
+                        <img
+                          src={eduItem.logo}
+                          alt={eduItem.school}
+                          className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-200"
                         />
                       ) : (
                         <span className="text-gray-500">
@@ -128,18 +135,16 @@ const Experience: React.FC<{ workHistory: WorkHistoryItem[], educationHistory: E
                   </div>
                   <div className="flex-grow">
                     <h4 className="text-brown-900 text-lg">{eduItem.degree}</h4>
-                    <p className="text-gray-700">
-                      {eduItem.school}
-                    </p>
+                    <p className="text-gray-700">{eduItem.school}</p>
                     <div className="flex items-center gap-4 text-sm text-gray-500 mt-1">
                       <div className="flex items-center gap-1">
                         <IconCalendar className="h-4 w-4" />
-                        <span>{eduItem.startDate} - {eduItem.endDate} · {eduItem.duration}</span>
+                        <span>
+                          {eduItem.startDate} - {eduItem.endDate} · {eduItem.duration}
+                        </span>
                       </div>
                     </div>
-                    {eduItem.description && (
-                      <p className="mt-4 text-gray-700">{eduItem.description}</p>
-                    )}
+                    {eduItem.description && <p className="mt-4 text-gray-700">{eduItem.description}</p>}
                   </div>
                 </div>
               </div>
@@ -151,4 +156,4 @@ const Experience: React.FC<{ workHistory: WorkHistoryItem[], educationHistory: E
   );
 };
 
-export default Experience; 
+export default Experience;

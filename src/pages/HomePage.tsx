@@ -17,7 +17,8 @@ import {
   subtitle,
   technologiesPrimary,
   technologiesSecondary,
-  workHistory} from "../consts/homePageData";
+  workHistory,
+} from "../consts/homePageData";
 
 const HomePage: React.FC = () => {
   return (
@@ -65,21 +66,13 @@ const HomePage: React.FC = () => {
         <Experience workHistory={workHistory} educationHistory={educationHistory} />
       )}
 
-      {proudHighlights.length > 0 && (
-        <ProudSection items={proudHighlights} />
-      )}
+      {proudHighlights.length > 0 && <ProudSection items={proudHighlights} />}
 
-      {recommendations.length > 0 && (
-        <Recommendations recommendations={recommendations} />
-      )}
+      {recommendations.length > 0 && <Recommendations recommendations={recommendations} />}
 
-      {projects.length > 0 && (
-        <SideProjects projects={projects} />
-      )}
+      {projects.length > 0 && <SideProjects projects={projects} />}
 
-      {personalWorkItems.length > 0 && (
-        <PersonalWork personalWorkItems={personalWorkItems} />
-      )}
+      {personalWorkItems.length > 0 && <PersonalWork personalWorkItems={personalWorkItems} />}
     </div>
   );
 };

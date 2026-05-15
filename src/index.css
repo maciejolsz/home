@@ -10,12 +10,13 @@ html {
 body {
   letter-spacing: 0.05em;
   cursor: default;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   /* opacity: 0.75; */
 }
 
-h1, h3 {
-  font-family: 'Bodoni Moda', serif;
+h1,
+h3 {
+  font-family: "Bodoni Moda", serif;
 }
 
 a {

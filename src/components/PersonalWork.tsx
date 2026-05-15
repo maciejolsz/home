@@ -36,4 +36,3 @@ const PersonalWork: React.FC<{ personalWorkItems: PersonalWorkItem[] }> = ({ per
 };
 
 export default PersonalWork;
-

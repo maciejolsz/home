@@ -2,8 +2,14 @@ import type { FC, SVGProps } from "react";
 
 type IconProps = SVGProps<SVGSVGElement>;
 
-export const IconCalendar: FC<IconProps> = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+export const IconCalendar: FC<IconProps> = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    {...props}>
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -12,7 +18,7 @@ export const IconCalendar: FC<IconProps> = (props) => (
   </svg>
 );
 
-export const IconPhoto: FC<IconProps> = (props) => (
+export const IconPhoto: FC<IconProps> = props => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}>
     <path
       fillRule="evenodd"
@@ -22,8 +28,14 @@ export const IconPhoto: FC<IconProps> = (props) => (
   </svg>
 );
 
-export const IconUser: FC<IconProps> = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+export const IconUser: FC<IconProps> = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    {...props}>
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -32,7 +44,7 @@ export const IconUser: FC<IconProps> = (props) => (
   </svg>
 );
 
-export const IconArrowTopRightOnSquare: FC<IconProps> = (props) => (
+export const IconArrowTopRightOnSquare: FC<IconProps> = props => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" {...props}>
     <path
       fillRule="evenodd"
@@ -48,8 +60,14 @@ export const IconArrowTopRightOnSquare: FC<IconProps> = (props) => (
 );
 
 /** Circular arrows — CI/CD stack badge */
-export const IconArrowPath: FC<IconProps> = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
+export const IconArrowPath: FC<IconProps> = props => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    {...props}>
     <path
       strokeLinecap="round"
       strokeLinejoin="round"

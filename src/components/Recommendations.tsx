@@ -39,4 +39,3 @@ const Recommendations: React.FC<{ recommendations: RecommendationItem[] }> = ({ 
 };
 
 export default Recommendations;
-

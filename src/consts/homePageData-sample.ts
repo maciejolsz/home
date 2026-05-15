@@ -1,4 +1,4 @@
-import { EducationHistoryItem,WorkHistoryItem } from "../components/Experience";
+import { EducationHistoryItem, WorkHistoryItem } from "../components/Experience";
 import { PersonalWorkItem } from "../components/PersonalWork";
 import { ProudItem } from "../components/ProudSection";
 import { RecommendationItem } from "../components/Recommendations";
@@ -20,8 +20,8 @@ export const projects: Project[] = [
   {
     title: "Sample Project",
     url: "https://sample-project.dev",
-    description: "Sample project description"
-  }
+    description: "Sample project description",
+  },
 ];
 
 export const workHistory: WorkHistoryItem[] = [
@@ -32,8 +32,8 @@ export const workHistory: WorkHistoryItem[] = [
     startDate: "jan 2020",
     endDate: "current",
     duration: "6 years",
-    description: "Sample work description"
-  }
+    description: "Sample work description",
+  },
 ];
 
 export const educationHistory: EducationHistoryItem[] = [
@@ -45,7 +45,7 @@ export const educationHistory: EducationHistoryItem[] = [
     logo: "/company-logos/sample_university.svg",
     description: "Sample education description",
     duration: "4 years",
-  }
+  },
 ];
 
 export const recommendations: RecommendationItem[] = [
@@ -53,8 +53,8 @@ export const recommendations: RecommendationItem[] = [
     name: "Sample Name",
     position: "Sample Position",
     company: "Sample Company",
-    text: "Sample recommendation text"
-  }
+    text: "Sample recommendation text",
+  },
 ];
 
 export const personalWorkItems: PersonalWorkItem[] = [];
@@ -63,16 +63,16 @@ export const proudHighlights: ProudItem[] = [
   {
     badge: "Sample Badge 1",
     punchline: "Sample Punchline",
-    description: "Sample description"
+    description: "Sample description",
   },
   {
     badge: "Sample Badge 2",
     punchline: "Sample Punchline",
-    description: "Sample description"
+    description: "Sample description",
   },
   {
     badge: "Sample Badge 3",
     punchline: "Sample Punchline",
-    description: "Sample description"
-  }
+    description: "Sample description",
+  },
 ];
