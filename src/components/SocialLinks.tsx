@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { email, github, linkedin, resume, x } from "../consts/homePageData";
 
 const SocialLinks: React.FC = () => {

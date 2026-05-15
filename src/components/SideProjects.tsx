@@ -1,5 +1,6 @@
 import React from "react";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
+
+import { IconArrowTopRightOnSquare } from "./UiIcons";
 
 export interface Project {
   title: string;
@@ -22,7 +23,7 @@ const SideProjects: React.FC<{ projects: Project[] }> = ({ projects }) => {
                   target="_blank"
                   className="inline-flex items-center gap-1 transition-colors duration-200">
                   {project.title}
-                  <ArrowTopRightOnSquareIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+                  <IconArrowTopRightOnSquare className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                 </a>
               </h4>
               <p className="mt-2 text-gray-700">{project.description}</p>

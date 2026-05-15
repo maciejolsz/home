@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { CalendarIcon } from "@heroicons/react/24/outline";
-import { PhotoIcon } from "@heroicons/react/24/solid";
+
+import { IconCalendar, IconPhoto } from "./UiIcons";
 
 type TabType = "work" | "education";
 
@@ -71,7 +71,7 @@ const Experience: React.FC<{ workHistory: WorkHistoryItem[], educationHistory: E
                           />
                         ) : (
                           <span className="text-gray-500">
-                            <PhotoIcon className="h-4 w-4" />
+                            <IconPhoto className="h-4 w-4" />
                           </span>
                         )}
                       </div>
@@ -84,7 +84,7 @@ const Experience: React.FC<{ workHistory: WorkHistoryItem[], educationHistory: E
                       </p>
                       <div className="flex items-center gap-4 text-sm text-gray-500 mt-1">
                         <div className="flex items-center gap-1">
-                          <CalendarIcon className="h-4 w-4" />
+                          <IconCalendar className="h-4 w-4" />
                           <span>{job.startDate} - {job.endDate} · {job.duration}</span>
                         </div>
                       </div>
@@ -121,7 +121,7 @@ const Experience: React.FC<{ workHistory: WorkHistoryItem[], educationHistory: E
                         />
                       ) : (
                         <span className="text-gray-500">
-                          <PhotoIcon className="h-4 w-4" />
+                          <IconPhoto className="h-4 w-4" />
                         </span>
                       )}
                     </div>
@@ -133,7 +133,7 @@ const Experience: React.FC<{ workHistory: WorkHistoryItem[], educationHistory: E
                     </p>
                     <div className="flex items-center gap-4 text-sm text-gray-500 mt-1">
                       <div className="flex items-center gap-1">
-                        <CalendarIcon className="h-4 w-4" />
+                        <IconCalendar className="h-4 w-4" />
                         <span>{eduItem.startDate} - {eduItem.endDate} · {eduItem.duration}</span>
                       </div>
                     </div>

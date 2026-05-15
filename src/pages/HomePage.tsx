@@ -1,51 +1,23 @@
 import React from "react";
-import StackIcon from "tech-stack-icons";
-import { ArrowPathIcon } from "@heroicons/react/24/outline";
-import capacitorIcon from "../assets/capacitor.png";
-import SideProjects from "../components/SideProjects";
+
 import Experience from "../components/Experience";
-import Recommendations from "../components/Recommendations";
-import SocialLinks from "../components/SocialLinks";
 import PersonalWork from "../components/PersonalWork";
 import ProudSection from "../components/ProudSection";
+import Recommendations from "../components/Recommendations";
+import SideProjects from "../components/SideProjects";
+import SocialLinks from "../components/SocialLinks";
+import TechIcon from "../components/TechIcon";
 import {
-  projects,
-  workHistory,
   educationHistory,
-  recommendations,
   name,
-  subtitle,
   personalWorkItems,
+  projects,
+  proudHighlights,
+  recommendations,
+  subtitle,
   technologiesPrimary,
   technologiesSecondary,
-  proudHighlights
-} from "../consts/homePageData";
-
-const getTechIcon = (tech: string) => {
-  const className = "w-5 h-5 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-200";
-  
-  // Exact matches preferred
-  switch (tech) {
-    case "JavaScript": return <StackIcon name="js" className={className} />;
-    case "TypeScript": return <StackIcon name="typescript" className={className} />;
-    case "Angular": return <StackIcon name="angular" className={className} />;
-    case "React": return <StackIcon name="react" className={className} />;
-    case "CSS": return <StackIcon name="css3" className={className} />;
-    case "Tailwind": return <StackIcon name="tailwindcss" className={className} />;
-    case "HTML": return <StackIcon name="html5" className={className} />;
-    case "RoR": return <StackIcon name="rails" className={className} />;
-    case "PHP": return <StackIcon name="php" className={className} />;
-    case "Next.js": return <StackIcon name="nextjs2" className={className} />;
-    case "Electron": return <StackIcon name="electron" className={className} />;
-    case "Capacitor": return <img src={capacitorIcon} alt="Capacitor" className={className} />;
-    case "Git": return <StackIcon name="git" className={className} />;
-    case "GitHub": return <StackIcon name="github" className={className} />;
-    case "CI/CD": return <ArrowPathIcon className={`w-5 h-5 text-gray-500 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-200`} />;
-    case "Docker": return <StackIcon name="docker" className={className} />;
-    case "MySQL": return <StackIcon name="mysql" className={className} />;
-    default: return null;
-  }
-};
+  workHistory} from "../consts/homePageData";
 
 const HomePage: React.FC = () => {
   return (
@@ -70,7 +42,7 @@ const HomePage: React.FC = () => {
               key={tech}
               className="group px-2 py-1 rounded-md text-gray-700 text-sm bg-paper hover:scale-110 transition-transform duration-200 animate-fade-in-up flex items-center gap-2"
               style={{ animationDelay: `${index * 100}ms` }}>
-              {getTechIcon(tech)}
+              <TechIcon tech={tech} />
               {tech}
             </span>
           ))}
@@ -82,7 +54,7 @@ const HomePage: React.FC = () => {
               key={tech}
               className="group px-2 py-1 rounded-md text-gray-700 text-xs bg-paper hover:scale-110 transition-transform duration-200 animate-fade-in-up flex items-center gap-2"
               style={{ animationDelay: `${index * 100}ms` }}>
-              {getTechIcon(tech)}
+              <TechIcon tech={tech} />
               {tech}
             </span>
           ))}

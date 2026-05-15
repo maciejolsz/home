@@ -1,5 +1,6 @@
 import React from "react";
-import { UserIcon } from "@heroicons/react/24/outline";
+
+import { IconUser } from "./UiIcons";
 
 export interface RecommendationItem {
   name: string;
@@ -19,7 +20,7 @@ const Recommendations: React.FC<{ recommendations: RecommendationItem[] }> = ({ 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
                 <div className="w-16 h-16 bg-paper rounded-lg shadow-sm flex items-center justify-center">
-                  <UserIcon className="h-8 w-8 text-gray-500" />
+                  <IconUser className="h-8 w-8 text-gray-500" />
                 </div>
               </div>
               <div className="flex-grow">
